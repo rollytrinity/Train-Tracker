@@ -6,19 +6,32 @@ import re
 ## edit station code here
 station_code = "EDB"
 
-url = "https://www.realtimetrains.co.uk/search/simple/gb-nr:" + station_code
+url = "https://www.realtimetrains.co.uk/"
+
+def extract_stops(train_url):
+    response = requests.get(url + train_url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    stops = soup.find_all('a',  class_='name')
+
+    stop_names = [stop.get_text().strip()[3:] for stop in stops]
+    stops = ", ".join(stop_names)
+
+    return stops
 
 
 def extract_departures(soup):
 
     # get all train departure entries
-    departures = soup.find_all('a', class_='service')
+    departures = soup.find_all('a', class_='service', href=True)
 
-    train_info = pd.DataFrame(columns=['Train Time', 'Destination', 'Provider', 'Status', 'Number of Coaches', 'Platform'])
+    train_info = pd.DataFrame(columns=['Train Time', 'Destination', 'Provider', 'Status', 'Number of Coaches', 'Platform', 'Stops'])
     regex = r'^(\d{4})([A-Za-z ]+?)(At platform|Starts here|On time)([A-Za-z ]+?)\s*·\s*(\d+)\s+coaches(\d+)$'
 
     # clean
     for departure in departures:
+        stops =extract_stops(departure['href'])
+
         train_info_text = departure.get_text()
         match = re.match(regex, train_info_text)
         if match:
@@ -35,7 +48,8 @@ def extract_departures(soup):
                 'Status': [status],
                 'Provider': [additional_info],
                 'Number of Coaches': [num_coaches],
-                'Platform': [platform]
+                'Platform': [platform],
+                'Stops': [stops]
             })
             train_info = pd.concat([train_info, new_row], ignore_index=True)
 
@@ -50,7 +64,7 @@ def record_to_csv(train_info, station_code):
 
 
 def main():
-    response = requests.get(url)
+    response = requests.get(url + 'search/simple/gb-nr:' + station_code)
     soup = BeautifulSoup(response.text, 'html.parser')
 
     train_info = extract_departures(soup)

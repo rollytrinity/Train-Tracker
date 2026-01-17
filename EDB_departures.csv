@@ -1,28 +1,23 @@
-Train Time,Destination,Provider,Status,Number of Coaches,Platform
-18:07,Helensburgh Central,ScotRail,At platform,6,15
-18:11,Manchester Airport,Transpennine Express,At platform,5,13
-18:13,North Berwick,ScotRail,At platform,6,7
-18:15,Glasgow Queen Street,ScotRail,At platform,8,14
-18:16,Tweedbank,ScotRail,At platform,3,3
-18:28,Glasgow Central,ScotRail,Starts here,3,11
-18:29,Garscadden,ScotRail,At platform,6,16
-18:30,Doncaster,LNER Azuma,At platform,9,5
-18:31,Glasgow Central,ScotRail,At platform,3,12
-18:36,Dunblane,ScotRail,Starts here,6,14
-18:38,North Berwick,ScotRail,Starts here,6,4
-18:39,Helensburgh Central,ScotRail,Starts here,6,13
-18:43,Tweedbank,ScotRail,Starts here,3,3
-18:45,Glasgow Queen Street,ScotRail,Starts here,8,14
-18:52,Aberdeen,LNER Azuma,On time,9,2
-18:52,Birmingham New Street,Avanti WC Pendolino,Starts here,9,9
-19:00,London Kings Cross,LNER Azuma,At platform,9,6
-19:00,Glasgow Central,ScotRail,At platform,3,10
-19:15,Glasgow Queen Street,ScotRail,Starts here,8,14
-19:24,Helensburgh Central,ScotRail,Starts here,6,13
-19:29,Glasgow Central,ScotRail,Starts here,6,12
-19:38,Dunblane,ScotRail,Starts here,3,10
-19:40,North Berwick,ScotRail,Starts here,6,4
-19:43,Tweedbank,ScotRail,Starts here,3,3
-19:45,Glasgow Queen Street,ScotRail,Starts here,8,12
-19:52,Helensburgh Central,ScotRail,Starts here,6,13
-20:03,Dunblane,ScotRail,Starts here,4,11
+Train Time,Destination,Provider,Status,Number of Coaches,Platform,Stops
+19:52,Helensburgh Central,ScotRail,At platform,6,13,"Edinburgh, Haymarket, Edinburgh Park, Uphall, Livingston North, Bathgate, Armadale, Blackridge, Caldercruix, Drumgelloch, Airdrie, Coatdyke, Coatbridge Sunnyside, Blairhill, Easterhouse, Garrowhill, Shettleston, Carntyne, Bellgrove, High Street, Glasgow Queen Street, Charing Cross (Glasgow), Partick, Hyndland, Anniesland, Westerton, Drumchapel, Drumry, Singer, Dalmuir, Dumbarton East, Dumbarton Central, Dalreoch, Cardross, Craigendoran, Helensburgh Central"
+20:03,Dunblane,ScotRail,Starts here,4,11,"Edinburgh, Haymarket, Edinburgh Park, Linlithgow, Polmont, Falkirk Grahamston, Camelon, Larbert, Stirling, Bridge of Allan, Dunblane"
+20:16,York,LNER Azuma,At platform,9,5,"Edinburgh, Dunbar, Reston, Berwick-upon-Tweed, Alnmouth, Morpeth, Newcastle, Durham, Darlington, Northallerton, York"
+20:15,Glasgow Queen Street,ScotRail,Starts here,8,16,"Edinburgh, Haymarket, Linlithgow, Polmont, Falkirk High, Croy, Glasgow Queen Street"
+20:27,Helensburgh Central,ScotRail,Starts here,6,14,"Edinburgh, Haymarket, Edinburgh Park, Uphall, Livingston North, Bathgate, Armadale, Blackridge, Caldercruix, Drumgelloch, Airdrie, Coatdyke, Coatbridge Sunnyside, Blairhill, Easterhouse, Garrowhill, Shettleston, Carntyne, Bellgrove, High Street, Glasgow Queen Street, Charing Cross (Glasgow), Partick, Hyndland, Anniesland, Westerton, Drumchapel, Drumry, Singer, Dalmuir, Dumbarton East, Dumbarton Central, Dalreoch, Cardross, Craigendoran, Helensburgh Central"
+20:30,Glasgow Central,ScotRail,Starts here,3,12,"Edinburgh, Haymarket, Slateford, Kingsknowe, Wester Hailes, Curriehill, Kirknewton, Livingston South, West Calder, Addiewell, Breich, Fauldhouse, Shotts, Hartwood, Cleland, Carfin, Holytown, Bellshill, Uddingston, Glasgow Central"
+20:35,Newcastle,Transpennine Express,Starts here,5,7,"Edinburgh, East Linton, Dunbar, Reston, Berwick-upon-Tweed, Alnmouth, Morpeth, Newcastle"
+20:35,Dunblane,ScotRail,Starts here,4,11,"Edinburgh, Haymarket, Edinburgh Park, Linlithgow, Polmont, Falkirk Grahamston, Camelon, Larbert, Stirling, Bridge of Allan, Dunblane"
+20:39,North Berwick,ScotRail,Starts here,6,4,"Edinburgh, Musselburgh, Wallyford, Prestonpans, Longniddry, Drem, North Berwick"
+20:43,Tweedbank,ScotRail,Starts here,3,3,"Edinburgh, Brunstane, Newcraighall, Shawfair, Eskbank, Newtongrange, Gorebridge, Stow, Galashiels, Tweedbank"
+20:45,Glasgow Queen Street,ScotRail,Starts here,8,14,"Edinburgh, Haymarket, Linlithgow, Polmont, Falkirk High, Croy, Glasgow Queen Street"
+20:52,Helensburgh Central,ScotRail,Starts here,6,13,"Edinburgh, Haymarket, Edinburgh Park, Uphall, Livingston North, Bathgate, Armadale, Blackridge, Caldercruix, Drumgelloch, Airdrie, Coatdyke, Coatbridge Sunnyside, Blairhill, Easterhouse, Garrowhill, Shettleston, Carntyne, Bellgrove, High Street, Glasgow Queen Street, Charing Cross (Glasgow), Partick, Hyndland, Anniesland, Westerton, Drumchapel, Drumry, Singer, Dalmuir, Dumbarton East, Dumbarton Central, Dalreoch, Cardross, Craigendoran, Helensburgh Central"
+21:03,Dunblane,ScotRail,Starts here,3,11,"Edinburgh, Haymarket, Edinburgh Park, Linlithgow, Polmont, Falkirk Grahamston, Camelon, Larbert, Stirling, Bridge of Allan, Dunblane"
+21:15,Glasgow Queen Street,ScotRail,Starts here,8,14,"Edinburgh, Haymarket, Linlithgow, Polmont, Falkirk High, Croy, Glasgow Queen Street"
+21:18,Glasgow Central,CrossCountry Voyager,On time,4,9,"Plymouth, Totnes, Newton Abbot, Exeter St Davids, Tiverton Parkway, Taunton, Bristol Temple Meads, Bristol Parkway, Cheltenham Spa, Worcestershire Parkway, Birmingham New Street, Tamworth, Derby, Chesterfield, Sheffield, Doncaster, York, Darlington, Durham, Newcastle, Alnmouth, Berwick-upon-Tweed, Edinburgh, Haymarket, Motherwell, Glasgow Central"
+21:22,Helensburgh Central,ScotRail,Starts here,6,13,"Edinburgh, Haymarket, Edinburgh Park, Uphall, Livingston North, Bathgate, Armadale, Blackridge, Caldercruix, Drumgelloch, Airdrie, Coatdyke, Coatbridge Sunnyside, Blairhill, Easterhouse, Garrowhill, Shettleston, Carntyne, Bellgrove, High Street, Glasgow Queen Street, Charing Cross (Glasgow), Partick, Hyndland, Anniesland, Westerton, Drumchapel, Drumry, Singer, Dalmuir, Dumbarton East, Dumbarton Central, Dalreoch, Cardross, Craigendoran, Helensburgh Central"
+21:25,Glasgow Central,ScotRail,Starts here,3,12,"Edinburgh, Haymarket, Slateford, Kingsknowe, Wester Hailes, Curriehill, Kirknewton, Livingston South, West Calder, Addiewell, Breich, Fauldhouse, Shotts, Hartwood, Cleland, Carfin, Holytown, Bellshill, Uddingston, Glasgow Central"
+21:27,Aberdeen,ScotRail,Starts here,3,18,"Edinburgh, Haymarket, Dundee, Arbroath, Montrose, Stonehaven, Aberdeen"
+21:36,Dunblane,ScotRail,Starts here,4,10,"Edinburgh, Haymarket, Edinburgh Park, Linlithgow, Polmont, Falkirk Grahamston, Camelon, Larbert, Stirling, Bridge of Allan, Dunblane"
+21:40,North Berwick,ScotRail,Starts here,6,4,"Edinburgh, Musselburgh, Wallyford, Prestonpans, Longniddry, Drem, North Berwick"
+21:43,Tweedbank,ScotRail,Starts here,3,3,"Edinburgh, Brunstane, Newcraighall, Shawfair, Eskbank, Newtongrange, Gorebridge, Stow, Galashiels, Tweedbank"
+21:45,Glasgow Queen Street,ScotRail,Starts here,8,14,"Edinburgh, Haymarket, Linlithgow, Polmont, Falkirk High, Croy, Glasgow Queen Street"
