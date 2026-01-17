@@ -13,6 +13,7 @@ def extract_stops(train_url):
     stops = soup.find_all('a',  class_='name')
 
     stop_names = [stop.get_text().strip()[3:] for stop in stops]
+    stop_names = stop_names[1:]
     stops = ", ".join(stop_names)
 
     return stops
@@ -55,7 +56,7 @@ def extract_departures(soup):
 
 
 def record_to_csv(train_info):
-    filename = f"./output/{STATION_CODE}_departures.csv"
+    filename = f"../output/{STATION_CODE}_departures.csv"
     train_info.to_csv(filename, index=False)
     print(f"Train departure information saved to {filename}")
 
