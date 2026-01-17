@@ -14,7 +14,7 @@ def extract_departures(soup):
     # get all train departure entries
     departures = soup.find_all('a', class_='service')
 
-    train_info = pd.DataFrame(columns=['Train Time', 'Destination', 'Status', 'Number of Coaches', 'Platform'])
+    train_info = pd.DataFrame(columns=['Train Time', 'Destination', 'Provider', 'Status', 'Number of Coaches', 'Platform'])
     regex = r'^(\d{4})([A-Za-z ]+?)(At platform|Starts here|On time)([A-Za-z ]+?)\s*·\s*(\d+)\s+coaches(\d+)$'
 
     # clean
@@ -33,7 +33,7 @@ def extract_departures(soup):
                 'Train Time': [train_time],
                 'Destination': [destination],
                 'Status': [status],
-                'Additional Info': [additional_info],
+                'Provider': [additional_info],
                 'Number of Coaches': [num_coaches],
                 'Platform': [platform]
             })
